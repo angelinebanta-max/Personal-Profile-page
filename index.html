@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html> 
+
+<head>
+
+    <title>Personal Profile Page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<br>
+
+<body>
+
+<section id="Home">My Personal Profile Page</section>
+
+<div class="container">
+
+<nav class="navbar">
+
+    <a href="#Home">Home</a>
+
+    <a href="#About">About Section</a>
+
+    <a href="#Skill">Skill Table</a>
+
+    <a href="#Contact">Contact Form</a>
+
+</nav>
+
+</div>
+
+<br>
+
+<section id="About">
+
+<article class="container">
+
+      <img src="ange.jpeg" id="profilePic" width="20%" alt="My Photo">
+
+<div class="text">
+
+      <h2 class="letter">About Me</h2>
+
+      <h3>Angeline A. Banta</h3>
+
+        <p>I am a hardworking student who believes that education is the key to a better future. I always try my best to study hard, stay focused on my goals, and continue improving my knowledge and skills every day. I enjoy learning new things and challenging myself to grow both academically and personally. Outside of my studies, I value spending quality time with my family and friends because they give me support, motivation, and happiness. I believe that balancing hard work, strong relationships, and a positive mindset helps me become a better person and achieve my dreams.</p>
+
+<ul>
+
+    <li>Learning new skills and discovering new ideas that help me grow</li>
+
+    <li>Watching movies and shows, especially K-dramas and other interesting films.</li>
+
+    <li>Connecting and spending quality time with my family and friends.</li>
+
+    <li> Dance in my free time.</li>
+
+    <li>Exploring new interests that help me develop as a person.</li>
+
+</ul>
+
+    </div>
+
+    </article>
+
+</section>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<section id="Skill">
+
+    <div class="container">
+
+    <h2>Skills</h2>
+
+    <ul>
+
+        <li>Hardworking</li>
+
+        <li>Time management</li>
+
+        <li>Problem-solving</li>
+
+        <li>Communication</li>
+
+    </ul>
+
+</div>
+
+</section>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<section id="Contact">
+
+<div class="container">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<label for="name">Name</label>
+
+<input type="text" id="name" name="name" placeholder="Your full name" required>
+
+
+<label for="email">Email</label>
+
+<input type="email" id="email" name="_replyto" placeholder="your.email@example.com" required>
+
+
+<label for="subject">Subject</label>
+
+<input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+
+<label for="message">Message</label>
+
+<textarea id="message" name="message" placeholder="Write your message..." rows="5" required></textarea>
+
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+<br>
+
+<footer>
+
+    <p>© 2026 All rights reserved. No part of this work may be reproduced, distributed, or transmitted in any form or by any means without prior written permission from the author, except for brief quotations used for educational or review purposes.</p>
+
+</footer>
+
+</body>
+
+<script>
+
+let img = document.getElementById("profilePic");
+
+
+img.addEventListener("click", function() {
+
+  img.classList.toggle("zoomed");
+
+});
+
+</script>
+
+      </html>

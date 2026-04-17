@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Personal Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <a href="#Home">Home</a>
+    <a href="#About">About</a>
+    <a href="#Skill">Skills Table</a>
+    <a href="#Contact">Contact form</a>
+</nav>
+
+<!-- HOME -->
+<section id="Home">
+    <h1>My Personal Profile Page</h1>
+</section>
+
+<!-- ABOUT -->
+<section id="About" class="container">
+    <img src="ange.jpeg" id="profilePic" alt="My Photo">
+    
+    <div class="text">
+        <h2>About Me</h2>
+        <h3>Angeline A. Banta</h3>
+        <p>
+           Hello! I am a hardworking student who believes that education is the key to a better future...
+        </p>
+
+        <ul>
+            <li>Learning new skills</li>
+            <li>Watching movies and K-dramas</li>
+            <li>Spending time with family and friends</li>
+            <li>Dancing</li>
+            <li>Exploring new interests</li>
+        </ul>
+    </div>
+</section>
+
+<!-- SKILLS TABLE -->
+<section id="Skill" class="container">
+    <h2>Skills</h2>
+
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Level</th>
+        </tr>
+        <tr>
+            <td>Hardworking</td>
+            <td>Excellent</td>
+        </tr>
+        <tr>
+            <td>Time Management</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>Problem Solving</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>Communication</td>
+            <td>Very Good</td>
+        </tr>
+    </table>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="Contact" class="container">
+    <h2>Contact Me</h2>
+
+    <form action="result.html" method="GET" id="contactForm">
+        
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Your full name">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="your.email@example.com">
+
+        <label>Subject</label>
+        <input type="text" id="subject" placeholder="Subject">
+
+        <label>Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 All rights reserved.</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+let img = document.getElementById("profilePic");
+
+img.addEventListener("click", function() {
+  img.classList.toggle("zoomed");
+});
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  localStorage.setItem("name", document.getElementById("name").value);
+  localStorage.setItem("email", document.getElementById("email").value);
+  localStorage.setItem("subject", document.getElementById("subject").value);
+  localStorage.setItem("message", document.getElementById("message").value);
+
+  window.location.href = "result.html";
+});
+</script>
+</body>
+</html>
